@@ -68,6 +68,7 @@ Refer to the provided structure in payment.php and success.php for how to handle
 
 Support
 For any questions or further assistance, feel free to reach out on Fiverr.
+https://www.fiverr.com/users/wp_nayanray/
 
 License
 This project is open-source and available under the MIT License. You are free to use, modify, and distribute this code in accordance with the terms of the license.
