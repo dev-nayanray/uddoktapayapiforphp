@@ -27,6 +27,10 @@ To integrate **UddoktaPay**, make sure your environment meets these requirements
 git clone <repository-url>
 cd <repository-directory>
 
+#### 2. Update API Key
+Edit the functions.php file and replace the placeholder API key with your actual UddoktaPay API key:
+```bash
+$apiKEY = 'YOUR_API_KEY_HERE';
 
 #### 2. Update API Key
 Edit the functions.php file and replace the placeholder API key with your actual UddoktaPay API key:
