@@ -18,31 +18,30 @@ Clone the Repository
 
 Clone this repository to your local development environment or server:
 
-bash
-Copy code
+ 
 git clone <repository-url>
 cd <repository-directory>
+
+
 Update API Key
 
 Open the functions.php file and locate the section where the API key is defined. Replace the placeholder with your actual UddoktaPay API key:
 
-php
-Copy code
+ 
+ 
 $apiKEY = 'YOUR_API_KEY_HERE';
 Configure Redirect URLs
 
 In functions.php, update the following URLs to point to your success and cancel pages:
 
-php
-Copy code
+ 
 'redirect_url' => 'http://yourdomain.com/success.php',
 'cancel_url' => 'http://yourdomain.com/failed.php',
 Create Payment Form
 
 Create an HTML form to collect payment information. This form should submit to payment.php. Here’s a basic example:
 
-html
-Copy code
+ 
 <form method="POST" action="payment.php">
     <input type="text" name="cname" placeholder="Full Name" required>
     <input type="email" name="cemail" placeholder="Email" required>
