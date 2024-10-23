@@ -28,18 +28,19 @@ git clone <repository-url>
 cd <repository-directory>
 
 
-Update API Key
+#### 2. Update API Key
 Edit the functions.php file and replace the placeholder API key with your actual UddoktaPay API key:
+```bash
 $apiKEY = 'YOUR_API_KEY_HERE';
 
-Configure Redirect URLs
+#### 3.Configure Redirect URLs
 In the same functions.php file, update the following URLs to your success and cancel pages:
 'redirect_url' => 'http://yourdomain.com/success.php',
 'cancel_url' => 'http://yourdomain.com/failed.php',
 
-Create Payment Form
-Here’s a basic HTML form for collecting payment information. Ensure the form submits to payment.php:
-
+#### 4.Create Payment Form
+- ** Here’s a basic HTML form for collecting payment information. Ensure the form submits to payment.php:
+```bash
 <form method="POST" action="payment.php">
     <input type="text" name="cname" placeholder="Full Name" required>
     <input type="email" name="cemail" placeholder="Email" required>
@@ -48,24 +49,24 @@ Here’s a basic HTML form for collecting payment information. Ensure the form s
     <input type="hidden" name="cID" value="1"> <!-- Example user ID -->
     <button type="submit" name="paynowbtn">Pay Now</button>
 </form>
-🧪 Testing the Integration
-Use the UddoktaPay sandbox environment for testing. Simulate payments and verify the results to ensure all functionalities work correctly before going live.
+## 🧪 Testing the Integration
+- ** Use the UddoktaPay sandbox environment for testing. Simulate payments and verify the results to ensure all functionalities work correctly before going live.
 
-🖥️ Deployment
-Once thoroughly tested, deploy the code to your production server. Remember to update the URLs in functions.php to point to your live domain.
+## 🖥️ Deployment
+- **Once thoroughly tested, deploy the code to your production server. Remember to update the URLs in functions.php to point to your live domain.
 
-📄 Function Descriptions
-pay_url($full_name, $email, $amount, $order_id, $user_id): Generates a payment URL based on user and payment details. Returns the URL or an error message.
+## 📄 Function Descriptions
+- ** pay_url($full_name, $email, $amount, $order_id, $user_id): Generates a payment URL based on user and payment details. Returns the URL or an error message.
 
-pay_status($invoice_id): Checks the status of a payment using the invoice ID. Returns the payment status in JSON format or an error message.
+- ** pay_status($invoice_id): Checks the status of a payment using the invoice ID. Returns the payment status in JSON format or an error message.
 
-📚 Example Usage
-Check out payment.php and success.php for a clear example of handling payment submissions and displaying results. Follow this structure to ensure compatibility.
+## 📚 Example Usage
+- ** Check out payment.php and success.php for a clear example of handling payment submissions and displaying results. Follow this structure to ensure compatibility.
 
-🧑‍💻 Support
-For any questions or further assistance, feel free to reach out via my Fiverr profile.
+## 🧑‍💻 Support
+- ** For any questions or further assistance, feel free to reach out via my Fiverr profile.
 
-📝 License
-This project is open-source and available under the MIT License. You are free to use, modify, and distribute the code in accordance with the terms of the license.
+## 📝 License
+- ** This project is open-source and available under the MIT License. You are free to use, modify, and distribute the code in accordance with the terms of the license.
 
 #UddoktaPay #PHPIntegration #PaymentGateway #PaymentProcessing #TransactionVerification #PaymentURL #PHP7 #WebDevelopment #UddoktaPayAPI #Fiverr #EcommerceIntegration #PaymentConfirmation
